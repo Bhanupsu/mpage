@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybrom</title>
+    <link rel="stylesheet" href="multipage.css">
+    <!-- Assuming you're using Font Awesome for icons, so I've added the necessary CDN link -->
+    <script src="https://kit.fontawesome.com/f54a5e221b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <h1>Logo</h1>
+        </div>
+        <ul id="menuList">
+            <li><a href="wd2.html"><i class="fa-solid fa-house"></i>Home</a></li>
+            <li><a href=""><i class="fa-brands fa-hire-a-helper"></i>Help</a></li>
+            <li><a href="photos.html"><i class="fa-solid fa-photo-film"></i>Photos</a></li>
+            <li><a href="about.html"><i class="fa-regular fa-address-card"></i>About Us</a></li>
+        </ul>
+        <div class="menu-icon">
+            <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+        </div>
+    </nav> 
+
+    <script>
+        let menuList=document.getElementById('menuList')
+        menuList.style.maxHeight='0px'
+
+        function toggleMenu(){
+            if(  menuList.style.maxHeight=='0px')
+            {
+                menuList.style.maxHeight='300px'
+            }
+            else
+            {
+                menuList.style.maxHeight='0px'
+            }
+        }
+    </script>
+</body>
+</html>
